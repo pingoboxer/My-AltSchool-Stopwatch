@@ -38,7 +38,7 @@ document.getElementById("resetBtn").onclick = () => {
 document.getElementById("lapBtn").onclick = () => {
     lapCount++;
     let lapTime = formatTime(milliseconds);
-    let lapEntry = document.createElement("div");
+    let lapEntry = document.createElement("section");
     lapEntry.textContent = `Lap ${lapCount}: ${lapTime}`;
     lapsContainer.prepend(lapEntry); // newest lap on top
 };
